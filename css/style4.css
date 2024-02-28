@@ -1,0 +1,28 @@
+.container{
+    display: block;
+    width: 360px;
+    height: 28px;
+    border: 1px solid #6fb5fc ;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 100px auto;
+    position: relative;
+}
+
+.block{
+    display: block;
+    height: 28px;
+    width: 100px;
+    background-color: #6fb5fc;
+    position: absolute;
+    animation: moveRight 5s linear infinite;
+}
+
+@keyframes moveRight {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: calc(100%); 
+    }
+}
